@@ -1,0 +1,28 @@
+---
+var paths = {
+  Home: "/",
+  Projects: "/#Projects",
+  Blog: "/#Blog",
+  Contact: "/#Contact",
+};
+---
+
+<div
+  class="w-full px-4 md:w-3/4 xl:w-2/3 flex justify-between py-4 absolute backdrop-blur-3xl z-10"
+>
+  <div class="flex justify-between w-full">
+    <nav class="flex justify-start items-center gap-2">
+      {
+        Object.keys(paths).map((v) => (
+          <a
+            href={paths[v as keyof typeof paths]}
+            class="hover:underline decoration-transparent hover:decoration-black transition-colors"
+          >
+            {v}
+          </a>
+        ))
+      }
+    </nav>
+    <a class="uppercase" href="#">ErikoXDev</a>
+  </div>
+</div>
