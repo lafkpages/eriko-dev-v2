@@ -6,7 +6,7 @@ export default function Tldr() {
     <>
       <a
         href="/#"
-        className="underline mb-2"
+        className="underline mb-2 pb-2"
         onClick={() => {
           setShowTldr(!showTldr);
         }}
@@ -24,13 +24,13 @@ export default function Tldr() {
         </ul>
       ) : (
         <>
-          <p className="sm:w-5/6 pb-8">
+          <p className="w-5/6 md:w-2/3 pb-8">
             I am a digital designer, full-stack JavaScript developer and
             student. I have a strong passion for both design and development. I
             specialize in creating dynamic and engaging digital experiences that
             seamlessly combine form and function.
           </p>
-          <p className="sm:w-5/6 pb-8">
+          <p className="w-5/6 md:w-2/3 pb-8">
             Whether working on a design project or developing a full-stack
             application, I bring a unique perspective and a commitment to
             excellence to every project. I believe in the importance of user
